@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         'gitbook': {
             development: {
                 input: "./",
-                github: "BjoernSchotte/gitbook-template"
+                github: "virkdata/opendataschool"
             }
         },
         'gh-pages': {

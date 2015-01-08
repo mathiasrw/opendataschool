@@ -2,7 +2,7 @@
 Vi vil forsøge, at vise fordelingen af den gennemsnitlige momsomsætning i kommunerne. Vi vælger at se på omsætningens i murer-branchen. Vi vil konstrure et kort, der kan vises os i hvilke kommuer murerne i gennemsnint betaler mest i moms.
 
 
-<iframe width='100%' height='520' frameborder='0' src='http://rastermanden.cartodb.com/viz/91e6f47a-9731-11e4-bc24-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width='100%' height='520' frameborder='0' src='http://virkdata.cartodb.com/viz/5988895a-973f-11e4-8e2f-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 
 

@@ -22,7 +22,7 @@ For at hente data skal man gøre følgende:
 5. Klik "Læg i kurv" og klik "gennemfør" bestilling
 6. Derefter er der et link til at downloade ordrer
 
-[se video](screencast_dagi.mp4)
+<iframe width="560" height="315" src="//www.youtube.com/embed/3cvd2Vcy9Xg" frameborder="0" allowfullscreen></iframe>
 
 
 > **Warning**

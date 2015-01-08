@@ -9,7 +9,10 @@ For at hente data skal man gøre følgende:
 3. I søgeresultaterne klikkes på "momsomsætning (gennemsnitlig)
 4. I overskriften "Dataressourcer" klikkes på resultatet "2012 Gennemsnitlig moms" og der klikkes "pil ned" og vælges "download"
 
-[se video](screencast_moms.mp4)
+
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/iA6sHAq8UaE" frameborder="0" allowfullscreen></iframe>
+
 
 > **Hint**
 Siden med data kan fides med direkte link her:

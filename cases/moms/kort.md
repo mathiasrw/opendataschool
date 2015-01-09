@@ -17,7 +17,7 @@ I dette tilfælde vil vi joine de to tabeller on-the fly for at vise den gennesn
 
 ### Visualization
 
-For at vi kke bruger for meget plads på vores CartoDB konto vil vil ikke lave nye tabeller, men lave et data join on-the-fly med SQL
+For at vi kke bruger for meget plads på vores CartoDB konto vil vil ikke lave nye tabeller, men lave et data join on-the-fly med SQL. Alternativt kunne vi oprette en ny tabel med de joinede tabller.
 
 
 

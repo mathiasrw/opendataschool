@@ -38,7 +38,7 @@ Det er ikke optimalt at joine på et tekstfelt. En kolonne med kommunekode best�
 
 ####Kommunegrænser
 
-Hvis vi hurtigt inspicerer vores datasæt for kommunerne, kan vi se at der er langt flere rækkker end der er kommuner i Danmark. Det skyldes måden datasættet er konstrueret på. Geometritypen i datasættet er defineret som en POLYGOMN og ikke en MULTIPOLYGON. Det bevirker at polygoner, der ikke hører sammen geometrisk har en selvstændig række i datasættet. Til en kommune kan der oftes knyttes flere enkelt polygoner. F.eks. har Amager en selvstændig polygon, som ikke hører til Indre København. Det giver problemer når vi skal joine til moms-datasættet. Vi kan med SQL lægge kommunepolygonerne sammen for de rækker, der hører til samme kommune.
+Hvis vi hurtigt inspicerer vores datasæt for kommunerne, kan vi se at der er langt flere rækkker end der er kommuner i Danmark. Det skyldes måden datasættet er konstrueret på. Geometritypen i datasættet er defineret som en POLYGON og ikke en MULTIPOLYGON. Det bevirker at polygoner, der ikke hører sammen geometrisk har en selvstændig række i datasættet. Til en kommune kan der oftes knyttes flere enkelt polygoner. F.eks. har Amager en selvstændig polygon, som ikke hører til Indre København. Det giver problemer når vi skal joine til moms-datasættet. Vi kan med SQL lægge kommunepolygonerne sammen for de rækker, der hører til samme kommune.
 
 
 Hvis vi tæller antallet af rækker, kan vi hurtigt se at der er flere (311) rækker end de 99 kommuner.

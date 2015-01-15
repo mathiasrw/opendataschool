@@ -52,7 +52,7 @@ SELECT COUNT(*) FROM kommune
 ```
 
 > **Comment**
-[COUNT](http://www.postgresql.org/docs/9.3/static/functions-aggregate.html) er en AGGREGATE funktin i SQL, der kan bruges til at lave simple statistikker på datasættet. Vi anvender SQL [SELECT](http://www.postgresql.org/docs/9.3/static/sql-select.html) som kun udvælger i data. Vi retter IKKE i datasættet med SELECT.
+[COUNT](http://www.postgresql.org/docs/9.3/static/functions-aggregate.html) er en AGGREGATE funktion i SQL, der bla. kan bruges til at lave simple statistikker på datasættet. Vi anvender SQL [SELECT](http://www.postgresql.org/docs/9.3/static/sql-select.html) som kun udvælger i data. Vi retter IKKE i datasættet med SELECT.
 
 Vi bruger en særlig [POSTGIS](http://postgis.refractions.net/documentation/) funktion [ST_UNION](http://postgis.net/docs/manual-2.0/ST_Union.html) til at lægge polygoner for samme kommune sammen.
 
@@ -62,7 +62,7 @@ SELECT st_union(the_geom) as the_geom, komnavn FROM kommune GROUP by komnavn
 Klik på linket "create table from query" og navngiv den nye tabel kommune_union
 
 
-> **Comment** 
+> **Comment**
 Når man anvender GROUP BY i SQL, lægger man rækker sammen. Derfor skal øvrige kolonner aggregeres. Her lægges geomtrierne sammen med en aggregate funktion, som hedder ST_Union() for alle de rækker med samme kommunenavn.
 
 #### Kommunenavne

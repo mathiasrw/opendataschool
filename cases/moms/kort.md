@@ -6,7 +6,7 @@ I Cartodb skelnes der mellem "tables" og "visualizations"
 
 Vi har nu forberedt to tabeller:
 
-1. En tabel med kommuneafgænsninger med kommunenavne savernde til de navne, der findes i moms-datasættet. Vi har derudover lagt polygoner sammen således, at der kun findes én mulitipolygon pr. kommune
+1. En tabel med kommuneafgænsninger med kommunenavne svarende til de navne, der findes i moms-datasættet. Vi har derudover lagt polygoner sammen således, at der kun findes én mulitipolygon pr. kommune
 
 2. En tabel med den gennemsnitlige momsbetaling fordelt på kommune og branche
 

@@ -8,4 +8,3 @@
 * [Case: Momskortet](cases/moms/README.md)
   * [Data](cases/moms/data.md)
   * [kort](cases/moms/kort.md)
-* [Visualisering](visualisering/README.md)

@@ -8,11 +8,13 @@ I denne CASE bruger vi CartoDB som er baseret på en [PostgreSQL](http://www.pos
 
 I denne CASE udnytter vi SQL funktioner fra både PostgreSQL og PostGIS til dels  at klargøre vores indlæste data og dels til at [JOINE](http://www.postgresql.org/docs/9.3/static/tutorial-join.html) vores to datasæt.
 
+> **Info**
+I videorne nedenfor vises de samme trin optaget mens de udføres i CartoDB
 
 ##Upload moms-data til CartoDB
 
 1. Opret en konto hos [CartoDB](https://cartodb.com/)
-2.Klik "view your tables"
+2. Klik "view your tables"
 3. Klik "New table" og vælg filen fra [Moms-data](/../data/moms.html)
 4. Når filen er uploaded klikkes på kolonne navnene og de omdøbes så vi har en kolonne for: komnavn,branche og omsaetning
 
@@ -32,7 +34,7 @@ I denne CASE udnytter vi SQL funktioner fra både PostgreSQL og PostGIS til dels
 
 ##Klargøring af data
 
-Førend de to datasæt kan forenes (joines) korrekt, er det nødvendigt at de deler en fælles nøgle. I denne case skal data joines på kommune. DAGI-datasættet med kommunegrænser indeholder en kolonne for kommunekoden og en kolonne for kommunenavnet mens moms-datasættet alene indeholder en kolonne for kommunenavn. Derfor er vi nødsaget til at bruge kolonnen for kommunenavn til vores data-join. Derudover bruges ikke nøjagtigt samme kommunenavne i de to datasæt. Vi vil derfor forsøge at manipulere data således der er to kolonner med samme stavemåde på kommunenavne. Desuden har vi en udfordring med antallet af kommunepolygoner i DAGI-datasættet. Lad os starte med den
+Førend de to datasæt kan forenes (joines) korrekt, er det nødvendigt at de deler en fælles nøgle. I denne case skal data joines på kommune. DAGI-datasættet med kommunegrænser indeholder en kolonne for kommunekoden og en kolonne for kommunenavnet mens moms-datasættet alene indeholder en kolonne for kommunenavn. Derfor er vi nødsaget til at bruge kolonnen for kommunenavn til vores data-join. Derudover bruges ikke nøjagtigt samme kommunenavne i de to datasæt. Vi vil derfor forsøge at manipulere data således at der er to kolonner med samme stavemåde på kommunenavne. Desuden har vi en udfordring med antallet af kommunepolygoner i DAGI-datasættet. Lad os starte med den.
 
 
 

@@ -13,7 +13,11 @@ Datasættet består af :
 
 Disse geografiske inddelinger er grundlaget for at danne en lang række visualiseringer på kort.
 
-For at hente data skal man gøre følgende:
+> **Info**
+I videoen nedenfor vises, hvordan det gøres.
+
+
+Man kan følge disse trin:
 
 1. Opret dig som bruger på [Kortforsyningen](http://download.kortforsyningen.dk/)
 2. Log ind og under "korttype" vælges "landinddelinger"
@@ -25,5 +29,5 @@ For at hente data skal man gøre følgende:
 <iframe width="560" height="315" src="//www.youtube.com/embed/3cvd2Vcy9Xg" frameborder="0" allowfullscreen></iframe>
 
 
-> **Warning**
+> **Info**
 Der vælges her et datasæt, hvor der er foretaget en udtynding i  antallet af koordinater. Dette gør datasættet mindre og egner sig fint til datavisualisering af hele Danmark samlet. Hvis der ønskes et referencedatasæt vælges istedet [Danmarks Administrative Geografiske Inddeling 1:10.000](http://download.kortforsyningen.dk/content/danmarks-administrative-geografiske-inddeling-110000)

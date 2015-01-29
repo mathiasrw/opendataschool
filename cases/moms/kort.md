@@ -15,7 +15,7 @@ Vi har nu forberedt to tabeller:
 I dette tilfælde vil vi joine de to tabeller on-the fly for at vise den gennesnitlige momsbetaling i murerbranchen fordelt på kommuner
 
 
-### Visualization
+### Visualisation
 
 For at vi kke bruger for meget plads på vores CartoDB konto vil vil ikke lave nye tabeller, men lave et data join on-the-fly med SQL. Alternativt kunne vi oprette en ny tabel med de joinede tabller.
 
@@ -35,8 +35,8 @@ LEFT JOIN skat_momsomsaetning_2012 skat ON (kom.komnavn_moms=skat.komnavn
   AND skat.branche='Murere')
   ORDER BY kom.komnavn_moms
 ```
-
-3. Vælg fannen "wizards" og vælg choropleth og brug column=omsaetning
+3. Øvetst i midten skiftes fra "DATA VIEW" til "MAP VIEW"
+3. VI højre side, vælges fanen "wizards" og vælg choropleth og brug column=omsaetning
 4. Vælg CSS fanen og tilføj en sort farve for null-værdierne (Læsø m.f) :
 
 ```css
@@ -61,3 +61,8 @@ Set hele gennemgangen her:
 
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/dsIbZ48niJg" frameborder="0" allowfullscreen></iframe>
+
+
+### Arbejd selv videre
+
+Prøv selv at lave kort med andre brancher.

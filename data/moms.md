@@ -2,7 +2,11 @@
 
 Data fra SKAT om virksomheders momsomsætning kan findes på [Virk data](http://datahub.virk.dk/)
 
-For at hente data skal man gøre følgende:
+> **Info**
+I videoen nedenfor vises, hvordan det gøres.
+
+
+Man kan følge disse trin:
 
 1. Åben din internet browser og navigér til http://datahub.virk.dk/
 2. Klik på fanen dtakatalog.I søgefeltet skrives "moms" of der tastes ENTER

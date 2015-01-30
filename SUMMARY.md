@@ -9,7 +9,7 @@
 * [Case: Momskortet](cases/moms/README.md)
   * [Data](cases/moms/data.md)
   * [kort](cases/moms/kort.md)
-  * [Case: CVR-kortet](cases/cvr/README.md)
+* [Case: CVR-kortet](cases/cvr/README.md)
   * [Data](cases/cvr/data.md)
   * [kort](cases/cvr/kort.md)
 * [Bidrag](bidrag/README.md)

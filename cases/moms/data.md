@@ -1,4 +1,4 @@
-## Data til momskortet
+# Data til momskortet
 
 Til denne case anvendes dels data fra SKAT for momsomsætning fordelt på virksomheder og dels de kommunale administrative grænser fra Geodatastyrelsen. Se afsnit om [data](/../data/README.html)
 
@@ -18,7 +18,7 @@ I videorne nedenfor vises de samme trin optaget mens de udføres i CartoDB
 3. Klik "New table" og vælg filen fra [Moms-data](/../data/moms.html)
 4. Når filen er uploaded klikkes på kolonne navnene og de omdøbes så vi har en kolonne for: komnavn,branche og omsaetning
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/glX4yp_ETQQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="//www.youtube.com/embed/glX4yp_ETQQ" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -28,7 +28,7 @@ I videorne nedenfor vises de samme trin optaget mens de udføres i CartoDB
 3. Klik "New table" og vælg filen fra [DAGI-data](/../data/dagi.html)
 4. Upload denne nye zip fil med kommunegrænser til CartoDB
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/aGrRyiSol1I" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="//www.youtube.com/embed/aGrRyiSol1I" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -125,7 +125,7 @@ DELETE FROM kommune_union WHERE komnavn_moms = 'Christiansø Kommune'
 
 Endelig kan vi se at den eneste ikke kommune der ikke kan joines, er Norddjurs Kommune. Den findes ikke i moms-datasættet. Det kan skyldes muligvis, at der er mindre en fem virksomheder af den type i kommunen. Disse medtages ikke kan man se på [Virk Data](http://datahub.virk.dk/dataset/momsomsaetning-gennemsnit)
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/kFr_rBbzWF0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="//www.youtube.com/embed/kFr_rBbzWF0" frameborder="0" allowfullscreen></iframe>
 
 
 Vi er nu klar til at producere selve kortet

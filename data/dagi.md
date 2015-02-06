@@ -1,4 +1,4 @@
-## Danmarks administrative geografiske inddeling
+# Danmarks administrative geografiske inddeling
 
 Geodatastyrelsen publicerer løbende datasæt om Danmarks geografiske inddeling (DAGI) og det kan hentes på [Kortforsyningen](http://download.kortforsyningen.dk/)
 
@@ -26,7 +26,7 @@ Man kan følge disse trin:
 5. Klik "Læg i kurv" og klik "gennemfør" bestilling
 6. Derefter er der et link til at downloade ordrer
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/3cvd2Vcy9Xg" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="//www.youtube.com/embed/3cvd2Vcy9Xg" frameborder="0" allowfullscreen></iframe>
 
 
 > **Info**

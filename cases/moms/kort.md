@@ -60,7 +60,7 @@ the_geom_webmercator er en kolonne, der ikke vises, men bruges "under-the-hood" 
 Set hele gennemgangen her:
 
 
-<iframe width="100%" height="315" src="//www.youtube.com/embed/dsIbZ48niJg" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="515" src="//www.youtube.com/embed/dsIbZ48niJg" frameborder="0" allowfullscreen></iframe>
 
 
 ### Arbejd selv videre

@@ -7,4 +7,4 @@ I denne CASE vil vi undersøge CVR datasættet og udarbejede et kort, som kan gi
 |---|---|-------|---|
 |Datasæt   |CVR registret, kommunegrænser   |
 |Sværhedsgrad   |Over middel   |
-|Forudsætninger |Installation af databse på pc, Kendskab til SQL   |
+|Forudsætninger |Installation af database på pc, Kendskab til SQL   |

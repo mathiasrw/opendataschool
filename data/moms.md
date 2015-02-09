@@ -15,7 +15,7 @@ Man kan følge disse trin:
 
 
 
-<iframe width="100%" height="315" src="//www.youtube.com/embed/iA6sHAq8UaE" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="515" src="//www.youtube.com/embed/iA6sHAq8UaE" frameborder="0" allowfullscreen></iframe>
 
 
 > **Hint**

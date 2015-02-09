@@ -14,7 +14,7 @@ Når databasen og PgAdmin er installeret, kan de følgnede trin påbegyndes.
 ### Indlæsning af CVR data i Postgres databasen
 
 
-1. Hent [CVR data]([data](/../data/cvr.html))
+1. Hent [CVR data](/../data/cvr.html)
 2. Opret en database med PgAdmin
 3. Opret et skema med navnet cvr
 4. Opret en tabel til indlæsning af CVR data
@@ -109,7 +109,7 @@ CREATE TABLE cvr.virksomheder
     );
 ```
 
-5. Indlæs data med [COPY funktionen](http://www.postgresql.org/docs/9.4/static/sql-copy.html)
+5.Indlæs data med [COPY funktionen](http://www.postgresql.org/docs/9.4/static/sql-copy.html)
 Udskift stien til filen, så den passer til placeringen af din egen fil.
 ```sql
 COPY cvr.virksomheder
@@ -121,8 +121,10 @@ CSV HEADER;
 6.Undersøg hvilken branche, der har flest virksomheder i hver kommune
 
 ```sql
-SELECT t3.* FROM
-(beliggenhedsadresse_kommune_kode as kom_kode,beliggenhedsadresse_kommune_tekst, hovedbranche_tekst, count(1) as antal
+SELECT t3.kom_kode,t3.beliggenhedsadresse_kommune_tekst,max(t3.hovedbranche_tekst),t3.antal
+
+FROM
+(select '0' || beliggenhedsadresse_kommune_kode as kom_kode, beliggenhedsadresse_kommune_tekst, hovedbranche_tekst, count(1) as antal
 FROM cvr.virksomheder GROUP BY beliggenhedsadresse_kommune_tekst,beliggenhedsadresse_kommune_kode, hovedbranche_tekst
 ) t3
 JOIN
@@ -131,12 +133,12 @@ JOIN
   from
   (
     select beliggenhedsadresse_kommune_tekst, hovedbranche_tekst, count(1) as antal
-    FROM cvr.virksomheder group by beliggenhedsadresse_kommune_tekst , hovedbranche_tekst
+    FROM cvr.virksomheder GROUP BY beliggenhedsadresse_kommune_tekst , hovedbranche_tekst
     ) t
     GROUP BY beliggenhedsadresse_kommune_tekst
     ) t2
     ON (t2.antal = t3.antal AND t2.beliggenhedsadresse_kommune_tekst = t3.beliggenhedsadresse_kommune_tekst)
-
+    GROUP BY t3.kom_kode,t3.beliggenhedsadresse_kommune_tekst,t3.antal
     ORDER BY beliggenhedsadresse_kommune_tekst
 ```
 
@@ -149,7 +151,10 @@ Når vi kigger på resultatet af denne forespørgsel, kan vi se at i de fleste k
 |Ikke-finansielle holdingselskaber|
 |Udlejning af erhvervsejendomme|
 
-Det kan der være mage årsager til. Det er nogle meget brede kategorier og muligvis er virksomhederne placeret i disse i mangel af andre dækkende kategorier. Vi vælger at fjerne disse fra vores liste. Desuden får vi flere resulater pr. kommune, hvis der er brancher med samme antal virksomheder. Vi vil kun have nøjagtigt +en branche pr kommune. Derfor skal vi sortere en fra. Vi vælger - helt ukritisk - at beholde den branchekode, som alfabetisk har det største forbogstav med [Max](http://www.postgresql.org/docs/9.4/static/functions-aggregate.html). Det kan gøres med følgende sql
+> **Info**
+De frivillige organisationer er den branchekode alle foreninger(ikke sportsklubber) skal lægge sig under, og derfor er der rigtig mange af dem. De ligger typisk der hvor deres advokat bor, altså den advokat som administrerer organisationen. De uoplyste er virksomheder, som endnu ikke betaler moms, det vil sige helt nystartede virksomheder, eller meget små(omsætning på under 50.000).
+
+Det kan der være mange årsager til. Det er nogle meget brede kategorier og muligvis er virksomhederne placeret i disse i mangel af andre dækkende kategorier. Vi vælger at fjerne disse fra vores liste. Desuden får vi flere resulater pr. kommune, hvis der er brancher med samme antal virksomheder. Vi vil kun have nøjagtigt +en branche pr kommune. Derfor skal vi sortere en fra. Vi vælger - helt ukritisk - at beholde den branchekode, som alfabetisk har det største forbogstav med [Max](http://www.postgresql.org/docs/9.4/static/functions-aggregate.html). Det kan gøres med følgende sql
 
 
 ```sql
@@ -176,8 +181,11 @@ JOIN
 Nu ligner resultatet noget, der kan give et billede af de fremherskende brancher i kommunerne. Vi eksporterer nu resultatet til CartoDB.
 
 7.Marker SQL i PgAdmin og vælg i meuen: Query-> Execute to file. Kald filen top_brancher.csv
-8.Log ind på CartoDB og opret ny tabel som i [CASE om momsdata]](/../cases/moms/data.html))
-9. Tilret kom_kode feltet
+
+8.Log ind på CartoDB og opret ny tabel som i [CASE om momsdata]](/../cases/moms/data.html)) og upload top_brancher.csv
+
+9.Tilret kom_kode feltet.
+
 Vi vil nu joine vores analyseresultat med vores kommunegrænser. Kommunekoden i cvr er et heltal mens kommunekoden i vores DAGI koommuner er et tekstfelt bestående at et foranstillet nul eferfulgt af kommunekoden.
 Derfor tilføjer vi en kolonne til vores upladede datasæt (top_brancher). Vi åbner vores tabel i CartoDB og vælger SQL fanen og indtaster følgende sql, som opretter en ny kolonne til vores kommunekoder.
 
@@ -189,3 +197,8 @@ UPDATE top_brancher SET kom_kode_ny = '0' || kom_kode
 ```
 
 Vi er nu klar til at lave vores JOIN af vores cvr analyseresultat og vores DAGI kommunegrænser. Vi vil benytte en funktion (merge tables) i CartoDB til at JOINE to tabeller. Se hvordan i videoen herunder
+
+
+Se video af workflowet her:
+
+<iframe width="100%" height="515" src="//www.youtube.com/embed/D0XihcfNja8" frameborder="0" allowfullscreen></iframe>

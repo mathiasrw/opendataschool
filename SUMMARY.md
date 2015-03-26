@@ -12,4 +12,7 @@
 * [Case: CVR-kortet](cases/cvr/README.md)
   * [Data](cases/cvr/data.md)
   * [kort](cases/cvr/kort.md)
+* [Case: Virksomhder pr indb.](cases/virksomheder_pr_indb/README.md)
+  * [Data](cases/virksomheder_pr_indb/data.md)
+  * [kort](cases/virksomheder_pr_indb/kort.md)
 * [Bidrag](bidrag/README.md)

@@ -53,6 +53,7 @@ LEFT JOIN skat_momsomsaetning_2012 skat ON (kom.komnavn_moms=skat.komnavn
 10. Klik "Share" og del kort som url, iframe eller javascript
 
 
+
 > **Info**
 Bemærk, at vi henter kolonnerne cartodb_id og the_geom_webmercator. cartodb_id skal bruges til interaktioner i kortet som klik og hover
 the_geom_webmercator er en kolonne, der ikke vises, men bruges "under-the-hood" til rendering af kortet

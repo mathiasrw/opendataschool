@@ -1,11 +1,11 @@
 Kort med [d3](http://d3js.org/)
 ===
 
-D3 er et javascript bibliotek, der primært anvedes til at lave visualiseringer til webbrowsere ved at tilføje svg elementer til dom'en.D3 har god understøttelse for at producere kort.Nedenstående er et eksempel på det foregående kort, men udviklet med D3 og SVG eleementer. Datasættet er det samme og hentes direkte fra CartoDBs SQL API.
+D3 er et javascript bibliotek, der primært anvendes til at lave visualiseringer til webbrowsere ved at tilføje svg elementer til dom'en.D3 har god understøttelse for at producere kort.Nedenstående er et eksempel på det foregående kort, men udviklet med D3 og SVG eleementer. Datasættet er det samme og hentes direkte fra CartoDBs SQL API.
 
 Indsæt følgende i din egen index.html. Prøv også at zoome med scroll hjulet.
 
-Se Eksempel [her](/../../assets/d3.html) 
+Se Eksempel [her](/../../assets/d3.html)
 
 ```html
 
@@ -17,7 +17,7 @@ Se Eksempel [her](/../../assets/d3.html)
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
     <script src="http://d3js.org/topojson.v0.min.js"></script>
-    <script src="http://libs.cartocdn.com/cartodb.js/v2/cartodb.js"></script>
+
     <style type="text/css">
 
     body{
@@ -75,21 +75,19 @@ Se Eksempel [her](/../../assets/d3.html)
 
     svg.append("g").attr("id", "denmark");
 
-
-
     //sql.execute("SELECT ST_Simplify(the_geom,0.01) as the_geom, pop2005 as population FROM {{table_name}} WHERE the_geom IS NOT NULL", {table_name: denmark})
 
     d3.json("http://virkdata.cartodb.com/api/v2/sql?q=SELECT the_geom, virk_person FROM virk_pr_person WHERE the_geom IS NOT NULL&format=topojson&dp=5", function(collection) {
       //var subunits = topojson.object(collection);
-      var tj = {countries: {type: "GeometryCollection", geometries: []}};
+      var tj = {kommuner: {type: "GeometryCollection", geometries: []}};
       for (i in collection.objects){
-        tj.countries.geometries.push(collection.objects[i])
+        tj.kommuner.geometries.push(collection.objects[i])
       }
       collection.objects = tj
 
       svg.select("#denmark")
         .selectAll("path")
-          .data(topojson.object(collection, collection.objects.countries).geometries)
+        .data(topojson.object(collection, collection.objects.kommuner).geometries)
         .enter().append("path")
         .attr("fill", function(d) { return fill(d.properties.virk_person); })
         .attr("stroke-width", "0.1px")
@@ -104,4 +102,5 @@ Se Eksempel [her](/../../assets/d3.html)
     </script>
   </body>
 </html>
+
 ```

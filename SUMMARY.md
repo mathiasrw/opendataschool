@@ -15,4 +15,5 @@
 * [Case: Virksomhder pr indb.](cases/virksomheder_pr_indb/README.md)
   * [Data](cases/virksomheder_pr_indb/data.md)
   * [kort](cases/virksomheder_pr_indb/kort.md)
+  * [kort med d3](cases/virksomheder_pr_indb/kort_d3.md)
 * [Bidrag](bidrag/README.md)

@@ -69,15 +69,15 @@
 
     d3.json("http://virkdata.cartodb.com/api/v2/sql?q=SELECT the_geom, virk_person FROM virk_pr_person WHERE the_geom IS NOT NULL&format=topojson&dp=5", function(collection) {
       //var subunits = topojson.object(collection);
-      var tj = {countries: {type: "GeometryCollection", geometries: []}};
+      var tj = {kommuner: {type: "GeometryCollection", geometries: []}};
       for (i in collection.objects){
-        tj.countries.geometries.push(collection.objects[i])
+        tj.kommuner.geometries.push(collection.objects[i])
       }
       collection.objects = tj
 
       svg.select("#denmark")
         .selectAll("path")
-          .data(topojson.object(collection, collection.objects.countries).geometries)
+        .data(topojson.object(collection, collection.objects.kommuner).geometries)
         .enter().append("path")
         .attr("fill", function(d) { return fill(d.properties.virk_person); })
         .attr("stroke-width", "0.1px")

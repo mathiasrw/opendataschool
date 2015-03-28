@@ -14,7 +14,7 @@ Når databasen og PgAdmin er installeret, kan de følgnede trin påbegyndes.
 ### Indlæsning af CVR data i Postgres databasen
 
 
-1. Hent [CVR data](/../data/cvr.html)
+1. Hent [CVR data](https://dl.dropboxusercontent.com/u/4427221/39247470_42355_20150123134947.zip)
 2. Opret en database med PgAdmin
 3. Opret et skema med navnet cvr
 4. Opret en tabel til indlæsning af CVR data

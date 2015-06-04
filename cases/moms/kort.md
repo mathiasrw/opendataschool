@@ -6,18 +6,18 @@ I Cartodb skelnes der mellem "tables" og "visualizations"
 
 Vi har nu forberedt to tabeller:
 
-1. En tabel med kommuneafgænsninger med kommunenavne svarende til de navne, der findes i moms-datasættet. Vi har derudover lagt polygoner sammen således, at der kun findes én mulitipolygon pr. kommune
+1. En tabel med kommuneafgrænsninger med kommunenavne svarende til de navne, der findes i momsdatasættet. Vi har derudover lagt polygoner sammen, således at der kun findes én mulitipolygon pr. kommune
 
 2. En tabel med den gennemsnitlige momsbetaling fordelt på kommune og branche
 
 ###En visualisation repræsenterer en særlig visualisering af en eller flere tabeller
 
-I dette tilfælde vil vi joine de to tabeller on-the fly for at vise den gennesnitlige momsbetaling i murerbranchen fordelt på kommuner
+I dette tilfælde vil vi joine de to tabeller on-the fly for at vise den gennemsnitlige momsbetaling i murerbranchen fordelt på kommuner
 
 
 ### Visualisation
 
-For at vi kke bruger for meget plads på vores CartoDB konto vil vil ikke lave nye tabeller, men lave et data join on-the-fly med SQL. Alternativt kunne vi oprette en ny tabel med de joinede tabller.
+For at vi kke bruger for meget plads på vores CartoDB konto vil vi ikke lave nye tabeller, men lave et data join on-the-fly med SQL. Alternativt kunne vi oprette en ny tabel med de joinede tabller.
 
 
 
@@ -35,8 +35,8 @@ LEFT JOIN skat_momsomsaetning_2012 skat ON (kom.komnavn_moms=skat.komnavn
   AND skat.branche='Murere')
   ORDER BY kom.komnavn_moms
 ```
-3. Øvetst i midten skiftes fra "DATA VIEW" til "MAP VIEW"
-3. VI højre side, vælges fanen "wizards" og vælg choropleth og brug column=omsaetning
+3. Øvest i midten skiftes fra "DATA VIEW" til "MAP VIEW"
+3. I højre side vælges fanen "wizards". Her vælges choropleth og bruges column=omsaetning
 4. Vælg CSS fanen og tilføj en sort farve for null-værdierne (Læsø m.f) :
 
 ```css
@@ -47,8 +47,8 @@ LEFT JOIN skat_momsomsaetning_2012 skat ON (kom.komnavn_moms=skat.komnavn
 ```
 
 5. Vælg "legend" og tilføj titel
-6. Vælg infovindue og konfigurér felter der skal vises ved klik og hover
-7. Nederst i venster hjørne vælges basemap og under "options"
+6. Vælg infovindue og konfigurér felter, der skal vises ved klik og hover (når man holder musen over et punkt/område)
+7. Nederst i venstre hjørne vælges basemap og under "options"
 9. Klik visualize og giv et navn
 10. Klik "Share" og del kort som url, iframe eller javascript
 

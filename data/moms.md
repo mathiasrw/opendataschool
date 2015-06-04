@@ -9,7 +9,7 @@ I videoen nedenfor vises, hvordan det gøres.
 Man kan følge disse trin:
 
 1. Åben din internet browser og navigér til http://datahub.virk.dk/
-2. Klik på fanen dtakatalog.I søgefeltet skrives "moms" of der tastes ENTER
+2. Klik på fanen datakatalog.I søgefeltet skrives "moms" og der tastes ENTER
 3. I søgeresultaterne klikkes på "momsomsætning (gennemsnitlig)
 4. I overskriften "Dataressourcer" klikkes på resultatet "2012 Gennemsnitlig moms" og der klikkes "pil ned" og vælges "download"
 
@@ -19,5 +19,5 @@ Man kan følge disse trin:
 
 
 > **Hint**
-Siden med data kan fides med direkte link her:
+Siden med data kan findes med direkte link her:
 http://datahub.virk.dk/dataset/momsomsaetning-gennemsnit - Direkte download til [datasættet](http://datahub.virk.dk/sites/default/files/storage/skat_momsomsaetning_2012.csv)

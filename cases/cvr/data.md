@@ -6,7 +6,7 @@ For at gennemføre denne case kræves en solid erfaring med IT
 De beskrevne trin vises også som videoer
 
 Derfor skal der installeres en PostgreSQL database samt PgAdmin (grafisk brugergrænseflade til PostgreSQL) før man kan følge de næste trin.
-Det letteste er, at bruge en installationspakke som kan hentes [her](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
+Det letteste er at bruge en installationspakke som kan hentes [her](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 
 
 Når databasen og PgAdmin er installeret, kan de følgnede trin påbegyndes.
@@ -154,7 +154,7 @@ Når vi kigger på resultatet af denne forespørgsel, kan vi se at i de fleste k
 > **Info**
 De frivillige organisationer er den branchekode alle foreninger(ikke sportsklubber) skal lægge sig under, og derfor er der rigtig mange af dem. De ligger typisk der hvor deres advokat bor, altså den advokat som administrerer organisationen. De uoplyste er virksomheder, som endnu ikke betaler moms, det vil sige helt nystartede virksomheder, eller meget små(omsætning på under 50.000).
 
-Det kan der være mange årsager til. Det er nogle meget brede kategorier og muligvis er virksomhederne placeret i disse i mangel af andre dækkende kategorier. Vi vælger at fjerne disse fra vores liste. Desuden får vi flere resulater pr. kommune, hvis der er brancher med samme antal virksomheder. Vi vil kun have nøjagtigt +en branche pr kommune. Derfor skal vi sortere en fra. Vi vælger - helt ukritisk - at beholde den branchekode, som alfabetisk har det største forbogstav med [Max](http://www.postgresql.org/docs/9.4/static/functions-aggregate.html). Det kan gøres med følgende sql
+Det kan der være mange årsager til. Det er nogle meget brede kategorier og muligvis er virksomhederne placeret i disse i mangel af andre dækkende kategorier. Vi vælger at fjerne disse fra vores liste. Desuden får vi flere resultater pr. kommune, hvis der er brancher med samme antal virksomheder. Vi vil kun have nøjagtigt +en branche pr kommune. Derfor skal vi sortere en fra. Vi vælger - helt ukritisk - at beholde den branchekode, som alfabetisk har det største forbogstav med [Max](http://www.postgresql.org/docs/9.4/static/functions-aggregate.html). Det kan gøres med følgende sql
 
 
 ```sql
@@ -186,7 +186,7 @@ Nu ligner resultatet noget, der kan give et billede af de fremherskende brancher
 
 9.Tilret kom_kode feltet.
 
-Vi vil nu joine vores analyseresultat med vores kommunegrænser. Kommunekoden i cvr er et heltal mens kommunekoden i vores DAGI koommuner er et tekstfelt bestående at et foranstillet nul eferfulgt af kommunekoden.
+Vi vil nu joine vores analyseresultat med vores kommunegrænser. Kommunekoden i cvr er et heltal, mens kommunekoden i vores DAGI koommuner er et tekstfelt bestående at et foranstillet nul efterfulgt af kommunekoden.
 Derfor tilføjer vi en kolonne til vores upladede datasæt (top_brancher). Vi åbner vores tabel i CartoDB og vælger SQL fanen og indtaster følgende sql, som opretter en ny kolonne til vores kommunekoder.
 
 

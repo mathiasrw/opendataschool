@@ -1,4 +1,4 @@
-#Virksomheder pr imdbygger fordelt på kommune
+#Virksomheder pr indbygger fordelt på kommune
 
 
 I denne case skal vi udarbejde et kort, der viser graden af iværksætteri i de danske kommuner målt ved antallet af virksomheder pr. indbygger i kommunen. Vi skal bruge data fra CVR i egen lokale database samt data om folketal hentet fra Statistikbanken.

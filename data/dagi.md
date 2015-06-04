@@ -2,7 +2,7 @@
 
 Geodatastyrelsen publicerer løbende datasæt om Danmarks geografiske inddeling (DAGI) og det kan hentes på [Kortforsyningen](http://download.kortforsyningen.dk/)
 
-Datasættet består af :
+Datasættet består af:
 
 * Kommuneinddelinger
 * Politikredse

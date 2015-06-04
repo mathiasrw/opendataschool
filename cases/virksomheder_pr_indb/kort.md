@@ -4,13 +4,13 @@ Vi har nu to tabeller i CartoDB **cvr_count** og **folketal**
 
 Vi skal nu joine de to tabeller på kolonnen med kommunekode. Det kan gøres med SQL, men vi vil gøre det med CartoDBs **merge** funktion.
 
-Inden vi kan **merge** skal vi lige fjerne overfødige data fra tabellen **folketal**
+Inden vi kan **merge** skal vi lige fjerne overflødige data fra tabellen **folketal**
 
 > **Info**
 Alle trin gennemgås også i videoen nedenfor
 
 
-I datasættet er der rækker med som ikke repræsenterer kommuner. Det er folketal fra regioner og gor hele landet. Det alle de rækker, hvor kolnnen omrade er mindre end 100.
+I datasættet er der rækker med som ikke repræsenterer kommuner. Det er folketal fra regioner fra hele landet. Det er alle de rækker, hvor kolonnens område er mindre end 100.
 
 
 Klik på tabellen **folketal** og åben SQL fanen i højre side.
@@ -60,7 +60,7 @@ Vælg at joine med tabellen **kommune_merge_kode** på kolonnerne **kom_kode_ny*
 
 Navngiv den nye tabel eksempelvis **virk_pr_person**
 
-Nu opretter vi en ny kolonne, der viser hvor mange virksomheder, der findes pr. person fordelt på kommune.
+Nu opretter vi en ny kolonne, der viser, hvor mange virksomheder, der findes pr. person fordelt på kommune.
 
 
 Opret kolonnen

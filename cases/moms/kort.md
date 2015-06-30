@@ -12,12 +12,12 @@ Vi har nu forberedt to tabeller:
 
 ###En visualisation repræsenterer en særlig visualisering af en eller flere tabeller
 
-I dette tilfælde vil vi joine de to tabeller on-the fly for at vise den gennemsnitlige momsbetaling i murerbranchen fordelt på kommuner
+I dette tilfælde vil vi joine de to tabeller on-the fly for at vise den gennemsnitlige momsbetaling i murerbranchen fordelt på kommuner.
 
 
 ### Visualisation
 
-For at vi kke bruger for meget plads på vores CartoDB konto vil vi ikke lave nye tabeller, men lave et data join on-the-fly med SQL. Alternativt kunne vi oprette en ny tabel med de joinede tabller.
+For at vi kke bruger for meget plads på vores CartoDB konto vil vi ikke lave nye tabeller, men lave et data join on-the-fly med SQL. Alternativt kunne vi oprette en ny tabel med de joinede tabeller.
 
 
 

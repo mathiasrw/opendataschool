@@ -6,7 +6,7 @@ For at gennemføre denne case kræves en solid erfaring med IT
 De beskrevne trin vises også som videoer
 
 Derfor skal der installeres en PostgreSQL database samt PgAdmin (grafisk brugergrænseflade til PostgreSQL) før man kan følge de næste trin.
-Det letteste er at bruge en installationspakke som kan hentes [her](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
+Det letteste er at bruge en installationspakke som kan hentes [her](http://www.enterprisedb.com/products-services-training/pgdownload#windows).
 
 
 Når databasen og PgAdmin er installeret, kan de følgnede trin påbegyndes.

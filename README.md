@@ -14,4 +14,4 @@ på egne ideer og måder at omsætte åbne data til værdi.
 
 Denne bog er udviklet som open source, og vi vil opfordre alle til at bruge den i lige den kontekst, der giver
 mening for dem. Ligeledes vil vi også opfordre til at komme med tilføjelser, enten direkte som pull
-requests (se nedenfor) eller ved at kontakte os.
+requests eller ved at [kontakte os](mailto:virkdata@erst.dk).

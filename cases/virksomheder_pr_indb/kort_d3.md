@@ -1,7 +1,7 @@
 Kort med [d3](http://d3js.org/)
 ===
 
-D3 er et javascript bibliotek, der primært anvendes til at lave visualiseringer til webbrowsere ved at tilføje svg elementer til dom'en.D3 har god understøttelse for at producere kort. Nedenstående er et eksempel på det foregående kort, men udviklet med D3 og SVG elementer. Datasættet er det samme og hentes direkte fra CartoDBs SQL API.
+D3 er et javascript bibliotek, der primært anvendes til at lave visualiseringer til webbrowsere. D3 har god understøttelse for at producere kort. Nedenstående er et eksempel på det foregående kort, men udviklet med D3 og SVG elementer. Datasættet er det samme og hentes direkte fra CartoDBs SQL API.
 
 Indsæt følgende i din egen index.html. Prøv også at zoome med scroll hjulet.
 
@@ -13,7 +13,7 @@ Se Eksempel [her](/../../assets/d3.html)
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>U.S. States</title>
+    <title>Kort med d3</title>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
     <script src="http://d3js.org/topojson.v0.min.js"></script>

@@ -58,7 +58,7 @@ LEFT JOIN skat_momsomsaetning_2012 skat ON (kom.komnavn_moms=skat.komnavn
 Bemærk, at vi henter kolonnerne cartodb_id og the_geom_webmercator. cartodb_id skal bruges til interaktioner i kortet som klik og hover
 the_geom_webmercator er en kolonne, der ikke vises, men bruges "under-the-hood" til rendering af kortet
 
-Set hele gennemgangen her:
+Se hele gennemgangen her:
 
 
 <iframe width="100%" height="515" src="//www.youtube.com/embed/dsIbZ48niJg" frameborder="0" allowfullscreen></iframe>
@@ -66,4 +66,4 @@ Set hele gennemgangen her:
 
 ### Arbejd selv videre
 
-Prøv selv at lave kort med andre brancher.
+Prøv selv at lave kort med andre brancher, ved at ændre på branchen i SQL-fanen.

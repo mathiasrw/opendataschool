@@ -5,7 +5,7 @@ Der er allerede fri adgang til en lang række åbne data og åbnes løbende op f
 ### Andre kilder til data
 [Kortforsyningen](http://kortforsyningen.dk/) Udstiller danske geografiske data
 
-[Opendata.dk](opendata.dk)Udstiller en række kommuners åbne data.
+[Opendata.dk](opendata.dk) Udstiller en række kommuners åbne data.
 
 [Danmarks Miljøportal](http://www.miljoeportal.dk/) udstiller en række data på miljøområdet.
 

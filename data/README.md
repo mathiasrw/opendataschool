@@ -1,6 +1,12 @@
 ## Åbne data
 
-Der åbnes løbende op for tilgængeligheden til en række åbne data. Nogle af disse data kan fremsøges på [Virk Data](http://datahub.virk.dk/). Andre datasæt (geografiske) kan findes hos [Kortforsyningen](http://kortforsyningen.dk/)
+Der er allerede fri adgang til en lang række åbne data og åbnes løbende op for tilgængeligheden til åbne data. Disse data kan blandt andet fremsøges på [Virk Data](http://datahub.virk.dk/).
 
 ### Andre kilder til data
+[Kortforsyningen](http://kortforsyningen.dk/) Udstiller danske geografiske data
+
+[Opendata.dk](opendata.dk)Udstiller en række kommuners åbne data.
+
+[Danmarks Miljøportal](http://www.miljoeportal.dk/) udstiller en række data på miljøområdet.
+
 [OpenstreetMap](http://osm.org)

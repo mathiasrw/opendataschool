@@ -32,7 +32,7 @@ Marker SQL i PgAdmin og vælg i meuen: Query-> Execute to file. Kald filen cvr_c
 
 Log ind på CartoDB og opret ny tabel som i [CASE om momsdata](/../cases/moms/data.html) og upload cvr_count.csv
 
-> **TIP**
+> **Comment**
 Hvis man har et unix-baseret (eller windows med WGET eller CURL) system kan man uploade i et skridt med SQL med dette hack:
 ```sql
 COPY

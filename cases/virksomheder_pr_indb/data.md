@@ -57,6 +57,9 @@ http://api.statbank.dk/v1/data/FOLK1/CSV?valuePresentation=Code&OMRÅDE=*&TID=20
 
 Log ind på CartoDB og opret en nye tabel og indsæt adressen ovenfor. Omdøb tabellen til **folketal** Dermed oprettes tabellen automatisk og det er ikke nødvendigt at uploade en fil.
 
+>**Comment**
+Du kan læse mere om [Danmarks Statisks API her](http://www.dst.dk/da/Statistik/statistikbanken/api), og lave andre forepørgsler
+
 Nu går vi videre til at danne selve kortet og resten af øvelsen foregår i CartoDB.
 
 <iframe width="100%" height="515" src="//www.youtube.com/embed/Csbh8LEUtp8" frameborder="0" allowfullscreen></iframe>

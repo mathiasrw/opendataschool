@@ -40,43 +40,43 @@ Indsæt kommunekoden + et foranstillet "0":
 UPDATE folketal SET kom_kode_ny = '0' || omrade
 ```
 
-Klik på kolonnen **indhold** og omdøb den til **personer**
+Klik på kolonnen **indhold** og omdøb den til **personer**.
 
-Vælg tabellen **cvr_count** og omdøb på samme måde kolonnen **antal** til **virksomheder**
+Vælg tabellen **cvr_count** og omdøb på samme måde kolonnen **antal** til **virksomheder**.
 
-Klik på menupunktet Edit>Merge with table
+Klik på menupunktet Edit>Merge with table.
 
-Vælg **column join**
+Vælg **column join**.
 
 I venstre panel vælges kolonnen **beliggenhedsadresse_kommune_kode**. Det er den kolonne vi vil joine med fra ** cvr_count** tabellen.
 
 I højre side vælges tabellen **folketal** og vælg kolonnen **omrade**. Dermed joiner vi de to tabeller på kommunekoden.
 
-Navngiv tabellen **cvr_count_folketal_merge**
+Navngiv tabellen **cvr_count_folketal_merge**.
 
 Åben nu tabellen **cvr_count_folketal_merge** og vælg igen Edit>Merge with table.
 
-Vælg at joine med tabellen **kommune_merge_kode** på kolonnerne **kom_kode_ny** og**komkode**
+Vælg at joine med tabellen **kommune_merge_kode** på kolonnerne **kom_kode_ny** og **komkode**.
 
-Navngiv den nye tabel eksempelvis **virk_pr_person**
+Navngiv den nye tabel eksempelvis **virk_pr_person**.
 
 Nu opretter vi en ny kolonne, der viser, hvor mange virksomheder, der findes pr. person fordelt på kommune.
 
 
-Opret kolonnen
+Opret kolonnen:
 
 ```sql
 ALTER TABLE virk_pr_person ADD column virk_person double precision;
 ```
 
-Opret beregnet kolonne med ny værdi.
+Opret beregnet kolonne med ny værdi:
 
 ```sql
 UPDATE virk_pr_person SET virk_person = virksomheder/personer::double precision
 ```
 
 
-Nu har vi alle data så vi kan lave kortet i CartoDB.
+Nu har vi alle data så vi kan lave kortet i CartoDB, tryk på fanen **map View** i toppen.
 
 Klik på fanen **Wizards** og vælg **choropleth**. Vælg kolonnen **virk_person** vi netop har oprettet.
 

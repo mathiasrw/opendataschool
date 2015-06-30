@@ -184,10 +184,10 @@ Nu ligner resultatet noget, der kan give et billede af de fremherskende brancher
 
 8.Log ind på CartoDB og opret ny tabel som i [CASE om momsdata]](/../cases/moms/data.html)) og upload top_brancher.csv
 
-9.Tilret kom_kode feltet.
+9.Tilret kom_kode feltet:
 
-Vi vil nu joine vores analyseresultat med vores kommunegrænser. Kommunekoden i cvr er et heltal, mens kommunekoden i vores DAGI koommuner er et tekstfelt bestående at et foranstillet nul efterfulgt af kommunekoden.
-Derfor tilføjer vi en kolonne til vores upladede datasæt (top_brancher). Vi åbner vores tabel i CartoDB og vælger SQL fanen og indtaster følgende sql, som opretter en ny kolonne til vores kommunekoder.
+Vi vil nu joine vores analyseresultat med vores kommunegrænser. Kommunekoden i cvr er et heltal, mens kommunekoden i vores DAGI koommuner er et tekstfelt bestående af et foranstillet nul efterfulgt af kommunekoden.
+Derfor tilføjer vi en kolonne til vores upladede datasæt (top_brancher). Vi åbner vores tabel i CartoDB og vælger SQL fanen og indtaster følgende sql, som opretter en ny kolonne til vores kommunekoder:
 
 
 ```sql
@@ -196,9 +196,9 @@ ALTER TABLE top_brancher ADD column kom_kode_ny character varying;
 UPDATE top_brancher SET kom_kode_ny = '0' || kom_kode
 ```
 
-Vi er nu klar til at lave vores JOIN af vores cvr analyseresultat og vores DAGI kommunegrænser. Vi vil benytte en funktion (merge tables) i CartoDB til at JOINE to tabeller. Se hvordan i videoen herunder
+Vi er nu klar til at lave vores JOIN af vores cvr analyseresultat og vores DAGI kommunegrænser. Vi vil benytte en funktion (merge tables) i CartoDB til at JOINE to tabeller i næste kapitel.
 
 
-Se video af workflowet her:
+Se video af workflowet i dette kapitel her:
 
 <iframe width="100%" height="515" src="//www.youtube.com/embed/D0XihcfNja8" frameborder="0" allowfullscreen></iframe>

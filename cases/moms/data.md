@@ -15,7 +15,7 @@ I videoerne nedenfor vises de samme trin, mens de udføres i CartoDB
 
 1. Opret en konto hos [CartoDB](https://cartodb.com/)
 2. Klik "view your tables"
-3. Klik "New table" og vælg filen fra [Moms-data](/../data/moms.html)
+3. Klik "New table" og vælg filen fra [Moms-data](http://virkdata.gitbooks.io/open-data-school/content/data/moms.html)
 4. Når filen er uploaded klikkes på kolonne navnene og de omdøbes så vi har en kolonne for: komnavn,branche og omsaetning
 
 <iframe width="100%" height="515" src="//www.youtube.com/embed/glX4yp_ETQQ" frameborder="0" allowfullscreen></iframe>
@@ -25,7 +25,7 @@ I videoerne nedenfor vises de samme trin, mens de udføres i CartoDB
 ###Upload kommunegrænser til CartoDB
 1. Klik "view your tables"
 2. Udpak filen på din computer og vælg alle filerne med navnet KOMMUNE.* og pak dem i en ny .zip fil
-3. Klik "New table" i cartodb og vælg filen fra [DAGI-data](/../data/dagi.html)
+3. Klik "New table" i cartodb og vælg filen fra [DAGI-data](http://virkdata.gitbooks.io/open-data-school/content/data/dagi.html)
 4. Upload denne nye zip fil med kommunegrænser til CartoDB
 
 <iframe width="100%" height="515" src="//www.youtube.com/embed/aGrRyiSol1I" frameborder="0" allowfullscreen></iframe>

@@ -40,7 +40,6 @@ LEFT JOIN skat_momsomsaetning_2012 skat ON (kom.komnavn_moms=skat.komnavn
 4. Vælg CSS fanen og tilføj en sort farve for null-værdierne (Læsø m.f) :
 
 ```css
-}
 #skat_momsomsaetning_2012 [ omsaetning = null] {
   polygon-fill: #000000;
 }

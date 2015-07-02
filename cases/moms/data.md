@@ -1,6 +1,6 @@
 # Data til momskortet
 
-Til denne case anvendes dels data fra SKAT for momsomsætning fordelt på virksomheder og dels de kommunale administrative grænser fra Geodatastyrelsen. Se afsnit om [data](/../data/README.html)
+Til denne case anvendes dels data fra SKAT for momsomsætning fordelt på virksomheder og dels de kommunale administrative grænser fra Geodatastyrelsen. Se afsnit om [data](http://virkdata.gitbooks.io/open-data-school/content/data/index.html)
 
 #CartoDB
 

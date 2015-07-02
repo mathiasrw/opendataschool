@@ -107,7 +107,7 @@ Vi kan se, at der er en række kolonner fra moms-tabellen (komnavn,omsaetning,br
 UPDATE kommune_union SET komnavn_moms = 'Århus Kommune' WHERE komnavn_moms = 'Aarhus Kommune';
 UPDATE kommune_union SET komnavn_moms = 'Brønderslev-Dronninglund Kommune' WHERE komnavn_moms = 'Brønderslev Kommune';
 UPDATE kommune_union SET komnavn_moms = 'Høje-Taastrup Kommune' WHERE komnavn_moms = 'Høje Taastrup Kommune';
-UPDATE kommune_union SET komnavn_moms = 'Københavns Kommune' WHERE komnavn_moms = 'København Kommune'
+UPDATE kommune_union SET komnavn_moms = 'Københavns Kommune' WHERE komnavn_moms = 'København Kommune';
 ```
 
 Når vi afvikler ovenstående JOIN kan vi se, at der stadig er rækker, der ikke JOINEs fordi ordet "Kommune" i nogle rækker er stavet med lille "k". Vi opdaterer moms-datasætte og sikrer, at Kommune er stavet med stort "K"

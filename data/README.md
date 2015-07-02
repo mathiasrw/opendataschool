@@ -1,6 +1,6 @@
 ## Åbne data
 
-Der er allerede fri adgang til en lang række åbne data og åbnes løbende op for tilgængeligheden til åbne data. Disse data kan blandt andet fremsøges på [Virk Data](http://datahub.virk.dk/).
+Der er allerede fri adgang til en lang række åbne data og åbnes løbende op for tilgængeligheden til åbne data. Disse data kan blandt andet fremsøges på [Virk Data](http://data.virk.dk/).
 
 ### Andre kilder til data
 [Kortforsyningen](http://kortforsyningen.dk/) Udstiller danske geografiske data

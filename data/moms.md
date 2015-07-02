@@ -1,6 +1,6 @@
 ##Momsdata
 
-Data fra SKAT om virksomheders momsomsætning kan findes på [Virk data](http://datahub.virk.dk/)
+Data fra SKAT om virksomheders momsomsætning kan findes på [Virk data](http://datahub.virk.dk/data/search)
 
 > **Info**
 I videoen nedenfor vises, hvordan det gøres.
@@ -8,8 +8,8 @@ I videoen nedenfor vises, hvordan det gøres.
 
 Man kan følge disse trin:
 
-1. Åben din internet browser og navigér til http://datahub.virk.dk/
-2. Klik på fanen datakatalog.I søgefeltet skrives "moms" og der tastes ENTER
+1. Åben din internet browser og navigér til http://data.virk.dk/
+2. Klik på fanen datakatalog. I søgefeltet skrives "moms" og der tastes ENTER
 3. I søgeresultaterne klikkes på "momsomsætning (gennemsnitlig)
 4. I overskriften "Dataressourcer" klikkes på resultatet "2012 Gennemsnitlig moms" og der klikkes "pil ned" og vælges "download"
 

@@ -182,7 +182,7 @@ Nu ligner resultatet noget, der kan give et billede af de fremherskende brancher
 
 7.Marker SQL i PgAdmin og vælg i meuen: Query-> Execute to file. Kald filen top_brancher.csv
 
-8.Log ind på CartoDB og opret ny tabel som i [CASE om momsdata](/../cases/moms/data.html) og upload top_brancher.csv
+8.Log ind på CartoDB og opret ny tabel som i [CASE om momsdata](http://virkdata.gitbooks.io/open-data-school/content/cases/moms/data.html) og upload top_brancher.csv
 
 9.Tilret kom_kode feltet:
 

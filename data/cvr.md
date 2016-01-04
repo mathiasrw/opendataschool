@@ -1,6 +1,6 @@
 # Danmarks Centrale Virksomhedsregister (CVR)
 
-Data fra CVR er en del af de åbne data. Man kan oprette sig som bruger og hente et udtræk af data [her](http://datacvr.virk.dk/data/legacy?page=cvr).
+Data fra CVR er en del af de åbne data. Man kan oprette sig som bruger og hente et udtræk af data [her](https://datacvr.virk.dk/data/cvr).
 
 
 
